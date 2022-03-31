@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bezkoder</groupId>
-	<artifactId>spring-boot-security-postgresql</artifactId>
+	<artifactId>p2-login-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-boot-security-postgresql</name>
 	<description>Spring Boot, Spring Security, PostgreSQL: JWT Authentication &amp; Authorization example</description>
