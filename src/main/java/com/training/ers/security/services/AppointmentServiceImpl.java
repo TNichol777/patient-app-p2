@@ -1,6 +1,7 @@
 package com.training.ers.security.services;
 
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,11 @@ public class AppointmentServiceImpl implements AppointmentService {
 	public boolean apptExists(int appointmentId) {
 		Optional<Appointment> appointment = appointmentRepository.findById(appointmentId);
 		return appointment.isPresent();
+	}
+	@Override
+	public List<Appointment> getAppointments() {
+		return (List<Appointment>) appointmentRepository.findAll();
+
 	}
 	
 }
