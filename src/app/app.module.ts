@@ -14,6 +14,7 @@ import { AppendingAppointmentsComponent } from './appending-appointments/appendi
 import { BookAppointmentComponent } from './book-appointment/book-appointment.component';
 
 import { ModelComponent } from './model/model.component';
+import { ApptInfoComponent } from './appt-info/appt-info.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ModelComponent } from './model/model.component';
     SignupPageComponent,
     AppendingAppointmentsComponent,
     BookAppointmentComponent,
-    ModelComponent
+    ModelComponent,
+    ApptInfoComponent
   ],
   imports: [
     BrowserModule,

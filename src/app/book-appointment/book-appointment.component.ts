@@ -16,11 +16,11 @@ export class BookAppointmentComponent implements OnInit {
  
 
   constructor(public formBuilder:FormBuilder, public appointmentService: AppointmentService, public router:Router) {     
-    this.book = new FormGroup({
+    this.book = this.formBuilder.group({
       doctorName: new FormControl('',Validators.required),
       patientName: new FormControl('',Validators.required),
       insurance: new FormControl('',Validators.required),
-      appointment: new FormControl('',Validators.required),
+      time: new FormControl('',Validators.required),
 });
     
     }
@@ -32,7 +32,7 @@ export class BookAppointmentComponent implements OnInit {
     bookAppointment(){
       console.log(this.book.value)
       this.appointmentService.bookAppointment(this.book.value).subscribe((data: any) =>{
-      this.successMessage = 'Doctors Based on Search';
+      this.successMessage = 'Appointment booked successfully';
       //this.router.navigate(['appointme']);
      })
     }

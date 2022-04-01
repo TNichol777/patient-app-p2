@@ -28,6 +28,13 @@ export class AppointmentService {
     );
   }
 
+  getAppointments(): Observable<Appointment[]> {
+    return this.httpClient.get<Appointment[]>(appointmentURL)
+    .pipe(
+      retry(0),
+      catchError(this.errorHandler)
+    );
+  }
  
 
   errorHandler(error: { error: { message: string; }; status: any; message: any; }) {

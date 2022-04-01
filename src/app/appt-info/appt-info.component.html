@@ -1,0 +1,13 @@
+<p>Here is yoru successfully Booked Appointment</p>
+<table border="10" cellspacing="10" cellpadding="10">
+    <tr *ngFor="let appointment of appointments">
+       
+       <th>The Doctor you will be seeing:</th> <td>{{appointment.doctorName}}</td>
+        <th>Your Name:</th> <td>{{appointment.patientName}}</td>
+        <th>Appointment Id number: </th>  <td>{{appointment.appointmentId}}</td>
+        <th>Appointment Time</th>  <td>{{appointment.time }}</td>
+       <!-- <th>Appointments Available</th>-->
+     
+    </tr>
+
+</table>
