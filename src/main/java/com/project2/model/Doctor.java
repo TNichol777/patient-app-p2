@@ -1,6 +1,8 @@
 package com.project2.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -16,9 +18,12 @@ import lombok.NoArgsConstructor;
 public class Doctor {
 	
 	@Id
+	//@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private int doctorId;
 	private String doctorName;
-	private String speciallty;
-	private String location;
-	private String insuranceExcepted;
+	private String insurance_Excepted;
+	private String location_city;
+	private String location_state;
+	private String specialty;
+	
 }
