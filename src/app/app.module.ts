@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,10 @@ import { ProfileComponent } from './profile/profile.component';
 
 
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
+import { FindDoctorComponent } from './find-doctor/find-doctor.component';
+import { BookAppointmentComponent } from './book-doctor/book-doctor.component';
+import { DoctorInfoComponent } from './doctor-info/doctor-info.component';
+
 
 @NgModule({
   declarations: [
@@ -19,13 +23,18 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    ProfileComponent
+    ProfileComponent,
+    FindDoctorComponent,
+    BookAppointmentComponent,
+    DoctorInfoComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
