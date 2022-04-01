@@ -1,32 +1,39 @@
 <h2>Book your Appointment</h2>
 <form novalidate [formGroup]="bookAppointment" (ngSubmit)="displaySelectedInfo()">
-   
-        <div class="form-group">
-            <table>
-         <tr>
-           <td><label>Docotr Name</label></td>
-            <td><input type="dropbox" class="form-control" formcontrolname="specialty"></td>
-        </tr>
-        <tr>
-           <td><label>Reason for visit</label></td>
-          <td><input type="dropbox" class="form-control" formcontrolname="reason"></td>
-          </tr> 
-            <tr>
-           <td><label>Location</label></td>
-           <td><input type="dropbox" class="form-control" formcontrolname="specialty"></td>
-           </tr>
-           <tr>
-            <td><label>Insurance Provider</label></td>
-            <td> <input type="dropbox" class="form-control" formcontrolname="specialty"></td>
-            </tr>
-            <tr>
-            <td> <label>Time</label>
-             <td><input type="dropbox" class="form-control" formcontrolname="specialty"></td>
-           </tr>
-            <br/>
-            </table>
-        </div>
-    
-    <div><input type="submit"></div>
-
+ 
+  <br/>
+  <div class="container">
+<form [formGroup]="book" (ngSubmit)="bookAppointment()">
+      
+   <div class="form-group">
+       <label for="specialty">Dr. Name:</label>
+       <select formControlName="specialty" class="form-control" >
+           <option value="Dentist">Dr. EggMan
+               <option value="Physician"> Dr. PickleRick
+                   <option value="Eye Doctor">Dr. Pepper
+                       <option value="Cardiologist"> Dr.Strange
+                           <option value="Surgeon"> Dr. Zodiburg
+     
+       <input type="text" class="form-control" name="patientname" >
+       
+      
+       <label for="specialty">State:</label>
+       <select formControlName="location_state" class="form-control">
+               <option value="Florida">Florida
+                   <option value="Texas">Texas
+                   <option value="California">California
+                       <option value="Tennesee"> Tennessee          
+       </select>
+       <label for="specialty">Insurance:</label>
+       <select formControlName="insuranceExcepted" class="form-control">
+           <option value="Health Care" selected>Health Care
+               <option value="All care health">All Care Health
+                   <option value="All state">All State
+                       <option value="Progressive"> Progressive
+       </select>
+   </div>
+   <!-- <button class="btn btn-primary" type="submit" [disabled]="finddoctor.valid">Submit</button> -->
+   <button class="btn btn-success" [disabled]="finddoctor.invalid" type="submit">Submit</button>
+</form>
+</div>
 
