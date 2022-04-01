@@ -10,11 +10,8 @@ import { PatientInfoComponent } from './patient-info/patient-info.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
 
 const routes: Routes = [
-  { path: 'patientInfo', component : PatientInfoComponent},
+
   { path: 'doctorInfo', component : DoctorInfoComponent},
-  { path: 'viewAppendingApp', component : AppendingAppointmentsComponent },
-  { path: 'login', component : LoginPageComponent},
-  { path: 'signUp', component : SignupPageComponent},
   { path: 'bookAppointment', component : BookAppointmentComponent},
   { path: 'findDoctor', component : KamisComponentComponent },
   { path: 'doctorHome', component : DoctorHomeComponent},
