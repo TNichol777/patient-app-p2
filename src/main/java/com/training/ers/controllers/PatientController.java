@@ -21,7 +21,7 @@ import com.training.ers.security.services.PatientService;
 
 @RestController
 @RequestMapping("patient")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:8081")
 public class PatientController {
 	
 	@Autowired
