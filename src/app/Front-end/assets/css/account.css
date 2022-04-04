@@ -1,0 +1,309 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800,900,|Libre+Baskerville:400,400i,700);
+@import url(bootstrap.min.css);
+@import url(icofont.css);
+@import url(animate.css);
+@import url(aos.css);
+@import url(swiper.min.css);
+@import url(plugin-collection.css);
+
+
+
+
+body {
+    color: #666666;
+    font-size: 0.875rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    line-height: 1.7142857143;
+    margin: 0;
+    overflow-x: hidden;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+  }
+  
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  
+  a {
+    color: #339999;
+    text-decoration: none;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
+  a:hover, a:active, a:focus {
+    box-shadow: none;
+    color: #206060;
+    outline: none;
+    text-decoration: none;
+  }
+  a img {
+    border: none;
+  }
+  
+  .btn:focus {
+    box-shadow: none;
+  }
+  
+  p {
+    margin-bottom: 30px;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  
+  :active,
+  :focus {
+    box-shadow: none;
+    outline: none !important;
+  }
+  
+  ::selection {
+    background: #339999;
+    color: #fff;
+    text-shadow: none;
+  }
+  
+  ::-moz-selection {
+    background: #339999;
+    /* Firefox */
+    color: #fff;
+    text-shadow: none;
+  }
+  
+  ::-webkit-selection {
+    background: #339999;
+    /* Safari */
+    color: #fff;
+    text-shadow: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  iframe {
+    border: none !important;
+  }
+  
+  textarea:focus, textarea:active, input:focus, input:active {
+    outline: none;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  ul li {
+    list-style: none;
+  }
+  
+  pre,
+  ul,
+  ol,
+  dl,
+  dd,
+  blockquote,
+  address,
+  table,
+  fieldset {
+    margin-bottom: 30px;
+  }
+  
+  table p {
+    margin-bottom: 0;
+  }
+  
+  /*
+  -----------------------------------------------------------------------
+    Common CSS
+  -----------------------------------------------------------------------
+  */
+  @media only screen and (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .row {
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .row > [class*=col-] {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+  
+  .section-title {
+    margin-bottom: 80px;
+  }
+  @media only screen and (max-width: 991px) {
+    .section-title {
+      margin-bottom: 70px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .section-title {
+      margin-bottom: 60px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .section-title {
+      margin-bottom: 50px;
+    }
+  }
+  .section-title h5 {
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  @media only screen and (max-width: 767px) {
+    .section-title h5 {
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+  }
+  .section-title .title {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -1.377px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+  }
+  @media only screen and (max-width: 1199px) {
+    .section-title .title {
+      font-size: 40px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .section-title .title {
+      font-size: 36px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .section-title .title {
+      font-size: 24px;
+    }
+  }
+  .section-title .title span {
+    color: #339999;
+    font-weight: 300;
+  }
+  .section-title .desc {
+    margin-bottom: 55px;
+  }
+  .section-title .desc p {
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+  @media only screen and (max-width: 767px) {
+    .section-title .desc p br {
+      display: none;
+    }
+  }
+  .section-title .separator-line {
+    border-bottom: 1px solid #339999;
+    display: block;
+    margin: 0 auto 40px;
+    width: 100px;
+  }
+  .section-title .list-style li {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 16px;
+    padding-left: 29px;
+    position: relative;
+  }
+  .section-title .list-style li i {
+    color: #339999;
+    font-size: 14px;
+    left: 0;
+    position: absolute;
+    top: 5px;
+  }
+  
+  #doctorRef{
+    font-size: 1rem;
+    font-weight: 150 ;
+    padding-left: 3rem;
+    
+   
+  }
+  
+  #Insurance{
+    color: #999999;
+  }
+  #subDoc{
+    margin-left: 3.5rem;
+    margin-top: .5rem;
+  }
+  
+  .section-title .list-style li:last-child {
+    margin-bottom: 0;
+  }
+  .section-title.section-light h5 {
+    color: #fff;
+  }
+  .section-title.section-light .title {
+    color: #fff;
+  }
+  .section-title.section-light .desc p {
+    color: #fff;
+  }
+  .section-title.section-light .separator-line {
+    border-bottom-color: #fff !important;
+  }
+  .section-title.section-light .separator-line.separator-double:before {
+    border-bottom-color: #fff !important;
+  }
+  
+  .bg-img {
+    background: no-repeat center center;
+    background-size: cover;
+  }
+  .bg-img.bg-img-top {
+    background-position: top center;
+  }
+  
+  .site-wrapper-reveal {
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .niceselect {
+    float: inherit;
+  }
+  .niceselect .list {
+    border-radius: 0;
+    width: 100%;
+  }
+  
+  .line-hr {
+    border-bottom: 1px solid #e2e2e2;
+  }
+  
+  .lh-1 {
+    line-height: 1;
+  }

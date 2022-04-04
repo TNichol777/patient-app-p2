@@ -13,16 +13,17 @@ import { PatientInfoComponent } from './kamis/patient-info/patient-info.componen
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', redirectTo: 'index.component.html', pathMatch: 'full' },
   { path: 'patientInfo', component : PatientInfoComponent},
   { path: 'doctorInfo', component : DoctorInfoComponent},
   { path: 'viewAppendingApp', component : AppendingAppointmentsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'dashboard', component: DashboardComponent }
+  { path: 'dashboard', component: DashboardComponent },
   { path: 'bookAppointment', component : BookAppointmentComponent},
   { path: 'findDoctor', component : KamisComponent},
-  { path: 'doctorHome', component : DoctorHomeComponent}
+  { path: 'doctorHome', component : DoctorHomeComponent},
+  {path : '', redirectTo : 'doctorInfo', pathMatch : 'full'}
 ];
 
 @NgModule({

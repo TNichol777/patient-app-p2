@@ -15,9 +15,10 @@ import { BookAppointmentComponent } from './kamis/book-appointment/book-appointm
 import {MatSelectModule} from '@angular/material/select';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
-import { DoctorComponent } from './model/doctor/doctor.component';
+
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ModelsComponent } from './models/models.component';
+import { NgbModule, NgbNavbar } from '@ng-bootstrap/ng-bootstrap';
+
 
 
 
@@ -29,16 +30,16 @@ import { ModelsComponent } from './models/models.component';
     KamisComponent,
     PatientInfoComponent,
     DoctorHomeComponent,
-
     DoctorInfoComponent,
-
     AppendingAppointmentsComponent,
     BookAppointmentComponent,
     LoginComponent,
     SignupComponent,
-    DoctorComponent,
     DashboardComponent,
-    ModelsComponent
+   
+    //book-appointmentComponent,
+    
+
   ],
   imports: [
     BrowserModule,
@@ -46,8 +47,9 @@ import { ModelsComponent } from './models/models.component';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    MatSelectModule
-
+    MatSelectModule,
+    NgbModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

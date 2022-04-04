@@ -10,6 +10,10 @@ export class DoctorInfoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
+    this.doctorService.getDoctors().subscribe((data: any) => {
+      this.doctors= data;
+    })
   }
 
 }
